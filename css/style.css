@@ -74,8 +74,8 @@ nav li:first-child {
   margin-right: auto;
 }
 .nav-home-img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   object-fit: fill;
 }
 
@@ -224,6 +224,179 @@ nav li:first-child {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.project-info-container {
+  /* background for positioning */
+  position: relative;
+  width: 318px;
+  height: 351px;
+  /*background: #ff0000;*/
+}
+
+.info-flexbox {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  flex-wrap: wrap;
+  /* vertical centering? */
+  height: 100vh;           /* make container full height */
+}
+
+.project-image {
+  position: absolute;
+  width: 300px;
+  height: 283px;
+  left: 0;
+  top: 0;
+
+  border-radius: 15px 15px 0px 0px;
+  transition: transform 0.3s ease;
+}
+
+.project-info-container:hover .project-image {
+  position: absolute;
+  width: 300px;
+  height: 283px;
+  left: 0;
+  top: 0;
+
+  border-radius: 15px 15px 0px 0px;
+  transform: scale(1.05);
+
+}
+
+.project-image-wrapper {
+  position: absolute;
+  width: 300px;
+  height: 283px;
+  left: 5px;
+  top: 5px;
+
+  border-radius: 15px 15px 0px 0px;
+  overflow: hidden;
+  /*background: #ff0000;*/
+}
+
+.project-separator-line {
+  position: absolute;
+  width: 301px;
+  height: 0px;
+  left: 4px;
+  top: 288px;
+
+  border: 1px solid #000000;
+  transform: rotate(0.01deg);
+}
+
+.project-bottom-info-container {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  left: 5px;
+  top: 288px;
+
+  background: #7E7E7E;
+  border-radius: 0px 0px 15px 15px;
+
+}
+
+.project-info-background {
+  position: absolute;
+  width: 310px;
+  height: 343px;
+  left: 0;
+  top: 0;
+
+  background: #000000;
+  border-radius: 20px;
+}
+
+.inter-project-name {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+
+  color: #ffffff;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.project-info-container:hover .inter-project-name {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: underline;
+
+  font-size: 12px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.inter-project-requirements {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  color: #ffffff;
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+.project-info-container-link-property a:visited {
+  color: #ffffff;
+}
+
+.padding-for-portfolio-page-1 {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.under-construction-page-layout {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.under-construction-warning-icon {
+  margin: auto;
+
+}
+
+.under-construction-line1 {
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 46px;
+  margin: auto;
+  text-align: center;
+}
+
+.under-construction-line2 {
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  margin: auto;
+  text-align: center;
+}
+
+.under-construction-line3 {
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+}
+.under-construction-line3 a {
+  color: white;
 }
 
 @media (max-width: 800px) {
